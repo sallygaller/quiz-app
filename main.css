@@ -1,71 +1,255 @@
-
-section {
-    border: 5px solid pink;
-    margin: auto;
-    width: 100%;
-    padding: 10px;
+body {
+  color: black;
+  background: repeating-linear-gradient( 
+    90deg,
+   #ffb5a7,#ffb5a7 100px, 
+   #fcd5ce 100px, #fcd5ce 200px, 
+   #f9dcc4 200px, #f9dcc4 300px,
+   #fec89a 300px, #fec89a 400px); 
 }
 
-ol {
-    margin-left: 10px;
-    line-height: 50px;
-}
-
-ul {
-    padding-left: 0px;
-}
-
-.m-left-50 {
-    margin-left: 50px;  
-}
-
-ul li:last-child {
-  margin-left: 50px;
-  margin-right: 0px;
-}
-
-.number-score {
-    display: inline-block;
-    list-style: none;
-}
-
-.align-center {
-    text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0px;
 }
 
 .group {
-  display: flex;
+  display: flex; 
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  background-color: #f8edeb;
+  border-radius: 50px;
 }
 
-@media all and (min-width: 800px) {
-  .group {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .space-around {
-    justify-content: space-around;
-  }
-
-  .flex-start {
-    justify-content: flex-start;
-  }
-
-  ol {
-    margin-left: 50px;
-    line-height: 50px;
-  }
-
-  ul li:last-child {
-  margin-left: 200px;
-  margin-right: 0px;
+.item-title {
+  max-width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-  section {
-    border: 5px solid pink;
-    margin: auto;
-    width: 75%;
-    padding: 10px;
+.item-homepage {
+  margin-top: 40px;
+  max-width: 90%;
+  margin-bottom: 25px;
+}
+
+.item-scoreboard {
+  padding: 10px 0px;
+  max-width: 90%;
+  margin-bottom: 40px;
+}
+
+.item-questionpage {
+  max-width: 90%;
+  padding: 5px 0px;
+  margin-bottom: 25px;
+}
+
+.item-answerpage {
+  max-width: 90%;
+  padding: 5px 0px;
+  margin-bottom: 25px;
+}
+
+.item-resultspage {
+  margin: 10px auto;
+  max-width: 90%;
+  padding: 5px 0px;
+  margin-bottom: 25px;
+}
+
+.home-image {
+  max-width: 75%;
+  padding-bottom: 10px;
+}
+
+section {
+  height: 100%;
+}
+
+img {
+  max-width: 75%;
+  height: auto;
+  display: flex;
+  justify-self: center;
+  margin: 25px auto 25px auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 62px;
+  margin: 0px;  
+  padding-top: 25px;
+}
+
+h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+
+.h2-subtitle {
+  padding: 10px 5px 25px 5px;
+  font-size: 17px;
+}
+
+.h3-answer {
+  padding: 25px 10px;
+  font-size: 18px;
+}
+
+.h3-score {
+  padding-top: 25px;
+  font-size: 18px;
+}
+
+.h3-question {
+  padding: 5px 10px 25px 10px;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.padding-25 {
+  padding: 25px;
+}
+
+.p-left-25 {
+  padding-left: 25px;
+}
+
+.p-right-25 {
+  padding-right: 25px;
+}
+
+fieldset {
+  margin: 10px;
+  padding: 10px;
+  border-style: none;
+}
+
+label {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/*button styling*/
+.btn {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  width: 125px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: #ffb5a7;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #fec89a;
+}
+
+.submit {
+  margin: 20px auto 5px auto;
+}
+
+.next {
+  margin-bottom: 5px;
+}
+
+.restart {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.options {
+  line-height: 25px;
+}
+
+.option-text {
+  display: flex;
+  margin-left: 5px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+  height: 100%;
+}
+
+li {
+  margin: 0 25px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
   }
+
+ul li:last-child a {
+  margin-right: 0;
+}
+
+@media all and (min-width: 650px) {
+.item-title {
+  max-width: 650px;
+}
+
+.item-homepage {
+  max-width: 650px;
+}
+
+.item-answerpage {
+  max-width: 650px;
+}
+
+.item-questionpage {
+  max-width: 650px;
+}
+
+.item-resultspage {
+  max-width: 650px;
+}
+
+.item-scoreboard {
+  max-width: 400px;
+}
+
+img {
+  max-width: 400px;
+}
+
+.option-text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+fieldset {
+  padding: 25px;
+}
 }

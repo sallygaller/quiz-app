@@ -2,44 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Title</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
-        type="text/css" />
-    <link href="main.css" rel="stylesheet" type="text/css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Codswallop</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section>
-        <div>
-            <h1 class="align-center">Title</h1>
-            <h2 class="align-center">Subtitle</h2>
-        </div>
-    </section>
-    <section>
-        <div class="group space-around ">
-            <ul class="align-center">
-                <li class="number-score">Question #</li>
-                <li class="number-score">Score</li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <div class="group flex-start">
-            <ol>Question:
-                <li>Answer-1</li>
-                <li>Answer-2</li>
-                <li>Answer-3</li>
-                <li>Answer-4</li>
-            </ol>
-        </div>
-    </section>
-    <section>
-        <div class="group space-around align-center">
-            <p>Submit</p>
-        </div>
-    </section>
-</body>
+  <section class="group item-title">
+	<h1>Codswallop</h1>
+  <h2 class="h2-subtitle">The Quiz About British Daytime Television</h2>
+  </section>
 
+  <section class="js-quiz-scores group item-scoreboard hidden">
+		<ul class="flex-row">
+			<li>Question:
+				<span class="js-question-number"></span>
+      </li>
+      <li>Score:
+			<span class="js-current-score"></span>/10
+      </li>
+    </ul>
+  </section>
+
+	<section class="js-homepage group item-homepage">
+			<p class="text-center padding-25">Do you know your 'Come Dine With Me' from your 'Countdown'?<br> Your 'Midsomer Murders' from your 'Supermarket Sweep'?<br> Do you have a life outside obscure British television?</p>
+			<button type="button" role="button" class="btn" id="start">Find out!</button>
+      <img class="home-image" src="images/home-page.jpg" alt="University Challenge contestant is asked an obscure question"> 
+  </section>
+
+  <section class="js-question-page">
+  </section>
+
+  <section class="js-answer-page group item-answerpage">
+  </section>
+
+  <section class="js-results-page group item-resultspage">
+  </section>
+ 
+  <script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="index.js"></script>
+</body>
 </html>
